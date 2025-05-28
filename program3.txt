@@ -1,0 +1,182 @@
+1.write a python program sum of the elements in a list?
+mylist=[10,2,3,7,0,8,34]
+
+sum=0
+
+for i in mylist:
+
+  sum=sum+i
+
+print("the sum is:",sum)
+   output:
+     the sum is: 64
+
+2.write a python program to accept string and converted into a list?
+s=input("enter the string:")
+
+print(s.split())
+    output:
+          enter the string:python is very easy programming language
+
+         ['python', 'is', 'very', 'easy', 'programming', 'language']
+
+3.write a python program to create empty list and store the elements?
+   mylist=[]
+
+n=int(input("enter any number:"))
+
+for x in range(n):
+   
+   num=int(input("enter a number:"))
+    
+   mylist.append(num)
+    
+print("my updated list is:",mylist)
+        output:
+             enter any number:5
+
+            enter a number:10
+
+           my updated list is: [10]
+
+             enter a number:20
+
+            my updated list is: [10, 20]
+
+            enter a number:30
+
+             my updated list is: [10, 20, 30]
+
+            enter a number:40
+
+           my updated list is: [10, 20, 30, 40]
+
+             enter a number:50
+
+           my updated list is: [10, 20, 30, 40, 50]
+
+
+4.write a python program to accessing and remove the elements from a list?
+l=[10,20,30,"milky",(10+20j),'true',1]
+
+print(l[3])
+
+print(l[-2])
+
+print(l[1:4])
+
+print(l)
+
+l.remove(30)
+
+print(l)
+
+output:
+milky
+
+true
+
+[20, 30, 'milky']
+
+[10, 20, 30, 'milky', (10+20j), 'true', 1]
+
+[10, 20, 'milky', (10+20j), 'true', 1]
+
+
+5.write a python program to find min and max,length of a list?
+l=[10,20,30,40,60,0,1]
+
+print(len(l))
+
+print(l)
+
+print(max(l))
+
+print(min(l))
+output:
+7
+
+[10, 20, 30, 40, 60, 0, 1]
+
+60
+
+0
+
+6.write a python program to accept N number and store them in list,then print the list without odd numbers in it.
+n=int(input("enter a value o0f n:"))
+
+mylist=[]
+
+for i in range(n):
+
+  num=int(input("enter a number:"))
+
+mylist.append(num)
+
+print("even numbers are")
+
+print("[",end=" ")
+
+for num in mylist:
+  
+  if num%2==0:
+        
+      print(num,end=",")
+ 
+  print("]")
+
+
+output:
+enter a value of n:5
+
+enter a number:10
+
+enter a number:15
+
+enter a number:20
+
+enter a number:25
+
+enter a number:33
+
+even numbers are
+
+[ 10,20]
+
+7.write a python program to remove specific element ,remove the list,copy the list into another list?
+l=[10,20,30,"milky",'true',0,(10+20j),1]
+
+print(l)
+
+x=l.copy()
+
+print(x)
+
+l.pop(3)
+
+print(l)
+
+del l[2]
+
+print(l)
+
+l.reverse()
+
+print(l)
+
+l.clear()
+
+print(l)
+
+output:
+[10, 20, 30, 'milky', 'true', 0, (10+20j), 1]
+
+[10, 20, 30, 'milky', 'true', 0, (10+20j), 1]
+
+[10, 20, 30, 'true', 0, (10+20j), 1]
+
+[10, 20, 'true', 0, (10+20j), 1]
+
+[1, (10+20j), 0, 'true', 20, 10]
+
+[]
