@@ -1,0 +1,157 @@
+1.write a python program to find GCD two numbers using function?
+def gcd(a,b):
+  
+  while b!=0:
+  
+      a,b=b,a%b
+      
+  return a
+     
+   num1=int(input("enter the first number:"))
+       
+ num2=int(input("enter the second number:"))
+     
+   result=gcd(num1,num2)
+       
+ print("the GCD of",num1,"and",num2,"is",result)
+output:
+enter the first number:18
+enter the second number:36
+the GCD of 18 and 36 is 18
+
+2.write a python program to find even or odd numbers using function?
+def check_even_odd(number):
+
+    if number%2==0:
+  
+       return "even"
+   
+   else:
+   
+     return "odd"
+      
+   num=int(input("enter a number:"))
+        
+ result=check_even_odd(num)
+        
+ print("the number is",result)
+  
+output:
+enter a number:8
+the number is even
+  
+3.write a python program to find factorial value of given number using function?
+def factorial(n):
+  
+    if n==0:
+      
+        return 1
+   
+ else:
+      
+    return n *factorial(n-1)
+   
+ num=int(input("enter a number:"))
+   
+ result=factorial(num)
+    
+print("the factorial of",num,"is",result)
+
+output:
+enter a number:5
+the factorial of 5 is 120
+4.write a python program to find sum of a list using function?
+def calculate_sum(numbers):
+
+    total=0
+ 
+   for num in numbers:
+ 
+       total+=num
+    
+      return total
+   
+       list=[]
+   
+     n=int(input("enter the number of elements in the list:"))
+  
+  for i in range(n):
+     
+      num=eval(input("enter element{}:",format(i+1)))
+    
+    list.append(num)
+      
+  result=calculate_sum(list)
+     
+   print("the sum of list is",result)
+output:
+enter the number of elements in the list:5
+enter the element 1:10
+enter the element 2:20
+enter the element 3:30
+enter the element 4:40
+enter the element 5:50
+the sum of list is 150
+5.write a python program to perform arithmetic operations using function?
+def add(x,y):
+
+    return x+y
+
+def subtract(x,y):
+  
+  return x-y
+
+def multiply(x,y):
+
+    return x*y
+
+def divide(x,y):
+
+    returnx/y
+ 
+ num1=float(input("enter the first number:"))
+ 
+ num2=float(input("enter the second number:"))
+ 
+ print("addition:",add(num1,num2))
+
+  print("subtraction:",subtract(num1,num2))
+
+  print("multiplication:",multiply(num1,num2))
+
+  print("division:",divide(num1,num2))
+
+output:
+enter the first number:10
+
+enter the second number:5
+
+addition: 15.0
+
+subtraction: 5.0
+
+multiplication: 50.0
+
+division: 2.0
+
+
+6.write a python program to find factorial value of given number using function?
+def factorial(n):
+
+    if n==0:
+   
+       return 1
+   
+   else:
+    
+      return n*factorial(n-1)
+   
+ num=int(input("enter a number:"))
+  
+  result=factorial(num)
+  
+  print("the factorial of",num,"is",result)
+
+output:
+enter a number:5
+the factorial of 5 is 120

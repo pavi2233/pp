@@ -1,0 +1,87 @@
+1.write a python  functions that creates and returns an object?
+class car:
+  
+  def_init_(self,brand,speed):
+      
+  self.brand=brand
+    
+    self.speed=speed
+     
+   def display(self):
+     
+       print(f"brand:{self.brand},speed:{self.speed}km/h")
+ 
+      def create_car():
+       
+         car 1=car("toyota",180)
+  
+             return car1
+   
+             my_car=create_car()
+        
+        my_car.display
+
+        output:
+brand:toyota,speed:180km/h
+
+2.write a function that takes a student object as an argument and points the student information?
+class student:
+    
+    def_init_(self,name,marks):
+ 
+   self.name=name
+   
+ self.marks=marks
+    
+   def print_student_info(student):
+ 
+       print(f"name:{student,name},marks:{student,marks}")
+  
+      s1=student("tillu",92)
+   
+     print_student_info(51)
+
+    output:
+Name:tillu,marks:92
+3.write a function thatreturns a circle object created with a given radius?
+class circle:
+
+    def_init_(self,radius):
+   
+     self.radius=radius
+      
+  def area(self):
+   
+         return 3.14* self.radius*self.radius
+   
+         def get_circle(r):
+           
+     return circle(r)
+      
+          c=get_circle(5)
+  
+              print("area of circles:",c.area())
+   
+   output:    
+area of circle:78.5
+4.write a function that returns a list of 3 books objects?
+class book:
+ 
+   def_init_(self,title):
+      
+  self.title=title
+  
+      def create_book_list():
+     
+       return[book("python 101"),book("ai basics"),book("data science")]
+   
+         books=create_book_list()
+ 
+           for b in books:
+         
+       print("book title:",b.title) 
+out put:
+book title:python101
+book title:ai basics
+book title:data sciences      
+        
